@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<title>Discotective - Algorithm</title>
+
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+
+</head>
+<body>
+
+	<!-- header starts-->
+	<div id="header-wrap"><div id="header" class="container_16">						
+		
+		<h1 id="logo-text"><a href="index.html" title="">Discotective</a></h1>
+		<p id="intro">Optical Music Recognition</p>
+		<p id="intro">EECS 452 Final Project</p>
+		
+		<!-- navigation -->
+		<div  id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="hardware.html">Hardware</a></li>
+				<li id="current"><a href="algorithm.html">Algorithm</a></li>
+				<li><a href="media.html">Media</a></li>
+				<li><a href="code.html">Code</a></li>
+				<li><a href="about.html">About</a></li>		
+			</ul>		
+		</div>		
+		
+	<!--	<div id="header-image"></div> 		-->
+		
+		
+	
+	<!-- header ends here -->
+	</div></div>
+	
+	<!-- content starts -->
+	<div id="content-outer"><div id="content-wrapper" class="container_16">
+	
+		<!-- main -->
+		<div id="main" class="grid_8">
+				
+			<h2>Algorithm</h2>
+			
+			<p>
+				We have a music transcription process that transforms a picture of sheet music into playable notes.
+			</p>
+			
+			<ol>
+				<li><div class="ol_title">Image Acquisition</div>
+					<a href="images/process_a_grayscale.png"><img src="images/process_a_grayscale_sm.png" /></a>
+					The first step in transcribing sheet music is capturing an image of the music. To accomplish this, we used an Altera D5M camera interfaced it with an Altera DE2 FPGA board. Altera supplies sample interface code served as the starting point for using the camera. We continuously captured frames from the camera and store it in the SDRAM on the FPGA. Eachframe from the camera is a five-megapixel image in RGB Bayer Pattern format, which is converted to a grayscale image in the hardware using bilinear interpolation demosaicing. This image is output continuously to the VGA Monitor until the user stops the camera. Once the camera is stopped, it no longer writes incoming data to the SDRAM. The most recent image stored in memory is passed on to be used in the following stages of the process. At this point, the image is ready to be processed.
+				</li>
+				
+				<li><div class="ol_title">Binarization</div>
+					<a href="images/process_b_binary.png"><img src="images/process_b_binary_sm.png" /></a>
+					The software converts the grayscale image to a binary image. Due to computation restraints on our hardware, a static threshold is used to binaryize the image. The software determines whether each pixel in the image should be white or black and assigns the value accordingly. Using a binary image takes eight times less memory space than a grayscale image and allows simpler processing.
+				</li>
+				
+				<li><div class="ol_title">Fisheye Correction</div>
+					<a href="images/process_c_defisheye.png"><img src="images/process_c_defisheye_sm.png" /></a>
+					The next step of the algorithm is to correct for lens distortion. The fisheye distortion applied by the camera is removed by using a parabolic transformation which maps pixel data to different indices. This reliably reconstructs the image free of distortion.
+				</li>
+				
+				<li><div class="ol_title">Staff Retreival</div>
+					<a href="images/process_d_staff.png"><img src="images/process_d_staff_sm.png" /></a>
+					The software then segments the image into staffs. It uses a projection onto the y axis to determine the location of the staff lines. Staff lines run almost the entire length of the image and their projections are larger than surrounding data by a significant margin. These staff lines are then grouped into groups of five. From the data contained in these groups, the image is divided into its different staffs.
+				</li>
+				
+				<li><div class="ol_title">Remove Staff Lines</div>
+					<a href="images/process_e_staff_lines_removed.png"><img src="images/process_e_staff_lines_removed_sm.png" /></a>
+					The software removes the staff lines from the image by whiting out pixels where staff lines are known to be located. As the staff lines are being removed, the pixels above and below the image are checked to determine if the staff line intersects a symbol. If the staff line intersects a symbol, that portion of the line is not removed.
+				</li>
+				
+				<li><div class="ol_title">Classify and Remove Key Signature</div>
+					<a href="images/process_f_no_key_sig.png"><img src="images/process_f_no_key_sig_sm.png" /></a>
+					The software determines the key signature by using projections on the x axis to locate sharp and flat symbols. Key signatures never contain a mix of sharps and flats. As such, when both sharps and flats are located, the software determines them all to be whichever symbol had more occurrences. From the number of sharps or flats that are found, the key signature is determined. It is then cropped out of the image.
+				</li>
+				
+				<li><div class="ol_title">Find Notes with Stems</div>
+					<a href="images/process_g_notes_found.png"><img src="images/process_g_notes_found_sm.png" /></a>
+					The software isolates notes with stems by taking vertical projections of the staff image. Peaks in the image correspond to either measure markers or notes with stems. Here all detected notes have been boxed in to show where the software found notes and connected eighth notes.
+				</li>
+				
+				<li><div class="ol_title">Remove Notes</div>
+					<a href="images/process_h_notes_gone.png"><img src="images/process_h_notes_gone_sm.png" /></a>
+					Once the notes are located are located, the vertical lines and note heads are removed and the characteristics of the note or measure marker are saved to be used later in classification.
+				</li>
+				
+				<li><div class="ol_title">Classification</div>
+					<p style="padding-left: 0;">The software assigns pitch and duration values to stemmed notes based on their characteristics. Pitch is determined based on the center of mass of the note head. Whichever staff line or space is closest to the center of mass of the note is assumed to be the intended note. Duration is determined by checking if the note head is filled or open and if it has a tail. If the note head is open, the note is a half note. If the note has a tail it is an eighth note. Otherwise it is a quarter note.</p>
+
+					<p style="padding-left: 0;">Whole notes are located later in the classification process. After the symbol is located, the symbol's features are compared against a set of known characteristics for whole notes. If it is found to be a whole note, its duration is assigned accordingly, and its pitch is determined from its center of mass.</p>
+				</li>
+				
+				<li><div class="ol_title">Output</div>
+					<p style="padding-left: 0;">Musical output consists of using the previous pitch, duration, and key signature data to output the corresponding music. The software takes all of the pitch and duration data from classification, along with the data for the key signature and assembles it into a list of frequency and time values. The software then uses these values in conjunction with direct digital synthesis and the FPGA's audio codec to output the waveforms corresponding to the sheet music. Additional tonal qualities were achieved by adding harmonic frequencies for each note.</p>
+				</li>
+			</ol>
+				
+		<!-- main ends -->
+		</div>
+		
+	
+	<!-- contents end here -->	
+	</div></div>
+
+	<!-- footer starts here -->	
+	<div id="footer-wrapper" class="container_16">
+	
+		<div id="footer-content">
+		
+			<div class="grid_8">
+		
+			University of Michigan - College of Engineering - EECS Department - Winter 2011	
+			
+			</div>	
+		
+		</div>
+	
+
+			
+	</div>
+	<!-- footer ends here -->
+
+</body>
+</html>

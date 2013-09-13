@@ -1,0 +1,97 @@
+Altera SOPC Builder Version 10.11 Build 197
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+No .sopc_builder configuration file(!)
+# 2011.04.05 04:23:28 (*) mk_custom_sdk starting
+
+# 2011.04.05 04:23:28 (*) Reading project C:/discotective/hardware/epac/main.ptf.
+
+# 2011.04.05 04:23:29 (*) Finding all CPUs
+# 2011.04.05 04:23:29 (*) Finding all available components
+
+# 2011.04.05 04:23:29 (*) Reading C:/discotective/hardware/epac/.sopc_builder/install.ptf
+
+# 2011.04.05 04:23:29 (*) Found 63 components
+
+# 2011.04.05 04:23:30 (*) Finding all peripherals
+
+# 2011.04.05 04:23:30 (*) Finding software components
+
+# 2011.04.05 04:23:31 (*) (Legacy SDK Generation Skipped)
+# 2011.04.05 04:23:31 (*) (All TCL Script Generation Skipped)
+# 2011.04.05 04:23:31 (*) (No Libraries Built)
+# 2011.04.05 04:23:31 (*) (Contents Generation Skipped)
+# 2011.04.05 04:23:31 (*) mk_custom_sdk finishing
+
+# 2011.04.05 04:23:31 (*) Starting generation for system: main.
+
+.
+.
+.
+.
+.
+.
+.
+
+# 2011.04.05 04:23:34 (*) Running Generator Program for jtag_uart_0
+
+# 2011.04.05 04:23:36 (*) Running Generator Program for cpu_0
+
+# 2011.04.05 04:23:40 (*) Starting Nios II generation
+# 2011.04.05 04:23:40 (*)   Checking for plaintext license.
+# 2011.04.05 04:23:41 (*)   Plaintext license not found.
+# 2011.04.05 04:23:41 (*)   Checking for encrypted license (non-evaluation).
+# 2011.04.05 04:23:41 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+# 2011.04.05 04:23:41 (*)   Getting CPU configuration settings
+# 2011.04.05 04:23:41 (*)   Elaborating CPU configuration settings
+# 2011.04.05 04:23:42 (*)   Creating all objects for CPU
+
+# 2011.04.05 04:23:42 (*)     Testbench
+# 2011.04.05 04:23:42 (*)     Instruction decoding
+# 2011.04.05 04:23:42 (*)       Instruction fields
+# 2011.04.05 04:23:43 (*)       Instruction decodes
+# 2011.04.05 04:23:45 (*)       Signals for RTL simulation waveforms
+# 2011.04.05 04:23:45 (*)       Instruction controls
+# 2011.04.05 04:23:45 (*)     Pipeline frontend
+# 2011.04.05 04:23:46 (*)     Pipeline backend
+# 2011.04.05 04:23:55 (*)   Generating HDL from CPU objects
+# 2011.04.05 04:24:04 (*)   Creating encrypted HDL
+
+# 2011.04.05 04:24:10 (*) Done Nios II generation
+
+# 2011.04.05 04:24:11 (*) Running Generator Program for onchip_memory2_0
+
+# 2011.04.05 04:24:14 (*) Running Generator Program for sdram_0
+
+# 2011.04.05 04:24:17 (*) Running Generator Program for sysid
+
+# 2011.04.05 04:24:19 (*) Running Generator Program for cfi_flash_0
+
+# 2011.04.05 04:24:21 (*) Running Generator Program for main_clock_0
+
+.
+
+
+# 2011.04.05 04:24:24 (*) Running Test Generator Program for sdram_0
+
+# 2011.04.05 04:24:26 (*) Making arbitration and system (top) modules.
+
+# 2011.04.05 04:24:54 (*) Generating Quartus symbol for top level: main
+
+# 2011.04.05 04:24:54 (*) Symbol C:/discotective/hardware/epac/main.bsf already exists, no need to regenerate
+# 2011.04.05 04:24:54 (*) Creating command-line system-generation script: C:/discotective/hardware/epac/main_generation_script
+
+# 2011.04.05 04:24:55 (*) Running setup for HDL simulator: modelsim
+
+
+# 2011.04.05 04:24:56 (*) Completed generation for system: main.
+# 2011.04.05 04:24:56 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : C:/discotective/hardware/epac/main.ptf 
+  System HDL Model : C:/discotective/hardware/epac/main.v 
+  System Generation Script : C:/discotective/hardware/epac/main_generation_script 
+
+# 2011.04.05 04:24:56 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

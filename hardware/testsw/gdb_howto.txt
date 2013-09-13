@@ -1,0 +1,12 @@
+Guide to use good GDB with Nios II
+
+1.	Download the .sof file to the board
+2.	Open Altera -> Nios II EDS 10.1 -> Nios II 10.1 Command Shell
+3.	Run "nios2-gdb-server --tcpport 2342 --tcppersist"
+	should say: "Using cable "USB-Blaster [USB-0]", device 1, instance 0x00
+				Pausing target processor: OK
+				Listening on port 2342 for conection from GDB:"
+4.	Open a new Nios II Command Shell and run "nios2-elf-gdb <filename.elf>"
+5.	Use GDB as normal
+	a)	target remote localhost:2342
+	b)	dump binary memory imgdump.bin 0x00800000 0x00cce300

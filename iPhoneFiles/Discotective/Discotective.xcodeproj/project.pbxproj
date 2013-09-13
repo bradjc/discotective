@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C5B5E1E13AC06A200EA5175 /* classification.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E1D13AC06A200EA5175 /* classification.c */; };
+		0C5B5E3913AC07B500EA5175 /* audio.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3213AC07B500EA5175 /* audio.c */; };
+		0C5B5E3A13AC07B500EA5175 /* deleting.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3313AC07B500EA5175 /* deleting.c */; };
+		0C5B5E3B13AC07B500EA5175 /* music_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3413AC07B500EA5175 /* music_functions.c */; };
+		0C5B5E3C13AC07B500EA5175 /* preprocessing.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3513AC07B500EA5175 /* preprocessing.c */; };
+		0C5B5E3D13AC07B500EA5175 /* run.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3613AC07B500EA5175 /* run.c */; };
+		0C5B5E3E13AC07B500EA5175 /* scanning.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3713AC07B500EA5175 /* scanning.c */; };
+		0C5B5E3F13AC07B500EA5175 /* segmentation.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E3813AC07B500EA5175 /* segmentation.c */; };
+		0C5B5E4713AC07FE00EA5175 /* allocate.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4113AC07FE00EA5175 /* allocate.c */; };
+		0C5B5E4813AC07FE00EA5175 /* flex_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4213AC07FE00EA5175 /* flex_array.c */; };
+		0C5B5E4913AC07FE00EA5175 /* general_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4313AC07FE00EA5175 /* general_functions.c */; };
+		0C5B5E4A13AC07FE00EA5175 /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4413AC07FE00EA5175 /* global.c */; };
+		0C5B5E4B13AC07FE00EA5175 /* image_functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4513AC07FE00EA5175 /* image_functions.c */; };
+		0C5B5E4C13AC07FE00EA5175 /* linked_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4613AC07FE00EA5175 /* linked_list.c */; };
+		0C5B5E4F13AC08C700EA5175 /* grandma.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4D13AC08C700EA5175 /* grandma.jpg */; };
+		0C5B5E5013AC08C700EA5175 /* santa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B5E4E13AC08C700EA5175 /* santa.jpg */; };
+		0C5B5E5313AC0B4A00EA5175 /* platform_specific.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E5213AC0B4A00EA5175 /* platform_specific.m */; };
+		0C5B5E5613AC0CA900EA5175 /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B5E5513AC0CA900EA5175 /* ImageHandler.m */; };
+		0C9BABB613B9546A00C7209D /* audio_files.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C9BABB513B9546A00C7209D /* audio_files.c */; };
+		0CA20A2513B96C4900E70129 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA20A2413B96C4900E70129 /* AVFoundation.framework */; };
+		0CA7347D13AF129700BB404E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA7347C13AF129700BB404E /* AudioToolbox.framework */; };
+		0CA7347F13AF129700BB404E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA7347E13AF129700BB404E /* Foundation.framework */; };
+		0CA7351F13AF13B300BB404E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA7351E13AF13B300BB404E /* CoreGraphics.framework */; };
+		0CA7352113AF13B300BB404E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA7352013AF13B300BB404E /* UIKit.framework */; };
+		0CD20C8D1374913B0075F7B2 /* SongHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD20C8C1374913B0075F7B2 /* SongHandler.m */; };
+		0CE8522E13B007BA00A2D43A /* DiscoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE8522D13B007BA00A2D43A /* DiscoLogo.png */; };
+		1D3623260D0F684500981E51 /* DiscotectiveAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DiscotectiveAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		2899E5220DE3E06400AC0155 /* DiscotectiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* DiscotectiveViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* DiscotectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* DiscotectiveViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C5B5E1D13AC06A200EA5175 /* classification.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = classification.c; path = ../../source/discotective/core/classification.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E1F13AC070100EA5175 /* allocate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = allocate.h; path = ../../source/discotective/include/allocate.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2013AC070100EA5175 /* audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = audio.h; path = ../../source/discotective/include/audio.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2113AC070100EA5175 /* classification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = classification.h; path = ../../source/discotective/include/classification.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2213AC070100EA5175 /* deleting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deleting.h; path = ../../source/discotective/include/deleting.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2313AC070100EA5175 /* flex_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flex_array.h; path = ../../source/discotective/include/flex_array.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2413AC070100EA5175 /* general_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = general_functions.h; path = ../../source/discotective/include/general_functions.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2513AC070100EA5175 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = global.h; path = ../../source/discotective/include/global.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2613AC070100EA5175 /* image_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = image_functions.h; path = ../../source/discotective/include/image_functions.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2713AC070100EA5175 /* linked_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = linked_list.h; path = ../../source/discotective/include/linked_list.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2813AC070100EA5175 /* music_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = music_functions.h; path = ../../source/discotective/include/music_functions.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2913AC070100EA5175 /* platform_specific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform_specific.h; path = ../../source/discotective/include/platform_specific.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2A13AC070100EA5175 /* preprocessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = preprocessing.h; path = ../../source/discotective/include/preprocessing.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2B13AC070100EA5175 /* run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = run.h; path = ../../source/discotective/include/run.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2C13AC070100EA5175 /* scanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scanning.h; path = ../../source/discotective/include/scanning.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E2D13AC070100EA5175 /* segmentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = segmentation.h; path = ../../source/discotective/include/segmentation.h; sourceTree = SOURCE_ROOT; };
+		0C5B5E3213AC07B500EA5175 /* audio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = audio.c; path = ../../source/discotective/core/audio.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E3313AC07B500EA5175 /* deleting.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = deleting.c; path = ../../source/discotective/core/deleting.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E3413AC07B500EA5175 /* music_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = music_functions.c; path = ../../source/discotective/core/music_functions.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E3513AC07B500EA5175 /* preprocessing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = preprocessing.c; path = ../../source/discotective/core/preprocessing.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E3613AC07B500EA5175 /* run.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = run.c; path = ../../source/discotective/core/run.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E3713AC07B500EA5175 /* scanning.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = scanning.c; path = ../../source/discotective/core/scanning.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E3813AC07B500EA5175 /* segmentation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = segmentation.c; path = ../../source/discotective/core/segmentation.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4113AC07FE00EA5175 /* allocate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = allocate.c; path = ../../source/discotective/utility/allocate.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4213AC07FE00EA5175 /* flex_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = flex_array.c; path = ../../source/discotective/utility/flex_array.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4313AC07FE00EA5175 /* general_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = general_functions.c; path = ../../source/discotective/utility/general_functions.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4413AC07FE00EA5175 /* global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = global.c; path = ../../source/discotective/utility/global.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4513AC07FE00EA5175 /* image_functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = image_functions.c; path = ../../source/discotective/utility/image_functions.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4613AC07FE00EA5175 /* linked_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = linked_list.c; path = ../../source/discotective/utility/linked_list.c; sourceTree = SOURCE_ROOT; };
+		0C5B5E4D13AC08C700EA5175 /* grandma.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grandma.jpg; path = ../../test/grandma.jpg; sourceTree = SOURCE_ROOT; };
+		0C5B5E4E13AC08C700EA5175 /* santa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = santa.jpg; path = ../../test/santa.jpg; sourceTree = SOURCE_ROOT; };
+		0C5B5E5213AC0B4A00EA5175 /* platform_specific.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = platform_specific.m; sourceTree = "<group>"; };
+		0C5B5E5413AC0CA900EA5175 /* ImageHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
+		0C5B5E5513AC0CA900EA5175 /* ImageHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHandler.m; sourceTree = "<group>"; };
+		0C9BABB513B9546A00C7209D /* audio_files.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = audio_files.c; path = ../../source/discotective/core/audio_files.c; sourceTree = SOURCE_ROOT; };
+		0C9BABB913B954D000C7209D /* audio_files.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_files.h; sourceTree = "<group>"; };
+		0CA20A2413B96C4900E70129 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0CA7347C13AF129700BB404E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		0CA7347E13AF129700BB404E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0CA7351E13AF13B300BB404E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0CA7352013AF13B300BB404E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0CD20C8B1374913B0075F7B2 /* SongHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongHandler.h; sourceTree = "<group>"; };
+		0CD20C8C1374913B0075F7B2 /* SongHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongHandler.m; sourceTree = "<group>"; };
+		0CE8522D13B007BA00A2D43A /* DiscoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DiscoLogo.png; path = ../../Resources/DiscoLogo.png; sourceTree = SOURCE_ROOT; };
+		1D3623240D0F684500981E51 /* DiscotectiveAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscotectiveAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* DiscotectiveAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscotectiveAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Discotective.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discotective.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2899E5210DE3E06400AC0155 /* DiscotectiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscotectiveViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* DiscotectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscotectiveViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* DiscotectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscotectiveViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Discotective_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discotective_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Discotective-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Discotective-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA7347D13AF129700BB404E /* AudioToolbox.framework in Frameworks */,
+				0CA7347F13AF129700BB404E /* Foundation.framework in Frameworks */,
+				0CA7351F13AF13B300BB404E /* CoreGraphics.framework in Frameworks */,
+				0CA7352113AF13B300BB404E /* UIKit.framework in Frameworks */,
+				0CA20A2513B96C4900E70129 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* DiscotectiveAppDelegate.h */,
+				1D3623250D0F684500981E51 /* DiscotectiveAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* DiscotectiveViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* DiscotectiveViewController.m */,
+				0C5B5E2313AC070100EA5175 /* flex_array.h */,
+				0C5B5E4213AC07FE00EA5175 /* flex_array.c */,
+				0C5B5E2713AC070100EA5175 /* linked_list.h */,
+				0C5B5E4613AC07FE00EA5175 /* linked_list.c */,
+				0CD20C8B1374913B0075F7B2 /* SongHandler.h */,
+				0CD20C8C1374913B0075F7B2 /* SongHandler.m */,
+				0C5B5E5413AC0CA900EA5175 /* ImageHandler.h */,
+				0C5B5E5513AC0CA900EA5175 /* ImageHandler.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Discotective.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0C5B5E2213AC070100EA5175 /* deleting.h */,
+				0C5B5E3313AC07B500EA5175 /* deleting.c */,
+				0C5B5E2B13AC070100EA5175 /* run.h */,
+				0C5B5E3613AC07B500EA5175 /* run.c */,
+				0C5B5E2013AC070100EA5175 /* audio.h */,
+				0C5B5E3213AC07B500EA5175 /* audio.c */,
+				0C5B5E4313AC07FE00EA5175 /* general_functions.c */,
+				0C5B5E2413AC070100EA5175 /* general_functions.h */,
+				0C5B5E2613AC070100EA5175 /* image_functions.h */,
+				0C5B5E4513AC07FE00EA5175 /* image_functions.c */,
+				0C5B5E2513AC070100EA5175 /* global.h */,
+				0C5B5E4413AC07FE00EA5175 /* global.c */,
+				0C5B5E4113AC07FE00EA5175 /* allocate.c */,
+				0C5B5E1F13AC070100EA5175 /* allocate.h */,
+				32CA4F630368D1EE00C91783 /* Discotective_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				0C5B5E1D13AC06A200EA5175 /* classification.c */,
+				0C5B5E2A13AC070100EA5175 /* preprocessing.h */,
+				0C5B5E3513AC07B500EA5175 /* preprocessing.c */,
+				0C5B5E2D13AC070100EA5175 /* segmentation.h */,
+				0C5B5E3813AC07B500EA5175 /* segmentation.c */,
+				0C5B5E2C13AC070100EA5175 /* scanning.h */,
+				0C5B5E3713AC07B500EA5175 /* scanning.c */,
+				0C5B5E2113AC070100EA5175 /* classification.h */,
+				0C5B5E2813AC070100EA5175 /* music_functions.h */,
+				0C5B5E3413AC07B500EA5175 /* music_functions.c */,
+				0C5B5E2913AC070100EA5175 /* platform_specific.h */,
+				0C5B5E5213AC0B4A00EA5175 /* platform_specific.m */,
+				0C9BABB513B9546A00C7209D /* audio_files.c */,
+				0C9BABB913B954D000C7209D /* audio_files.h */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CE8522D13B007BA00A2D43A /* DiscoLogo.png */,
+				0C5B5E4D13AC08C700EA5175 /* grandma.jpg */,
+				0C5B5E4E13AC08C700EA5175 /* santa.jpg */,
+				2899E5210DE3E06400AC0155 /* DiscotectiveViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Discotective-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CA20A2413B96C4900E70129 /* AVFoundation.framework */,
+				0CA7347E13AF129700BB404E /* Foundation.framework */,
+				0CA7347C13AF129700BB404E /* AudioToolbox.framework */,
+				0CA7351E13AF13B300BB404E /* CoreGraphics.framework */,
+				0CA7352013AF13B300BB404E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Discotective */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Discotective" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Discotective;
+			productName = Discotective;
+			productReference = 1D6058910D05DD3D006BFB54 /* Discotective.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Discotective" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Discotective */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* DiscotectiveViewController.xib in Resources */,
+				0C5B5E4F13AC08C700EA5175 /* grandma.jpg in Resources */,
+				0C5B5E5013AC08C700EA5175 /* santa.jpg in Resources */,
+				0CE8522E13B007BA00A2D43A /* DiscoLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* DiscotectiveAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* DiscotectiveViewController.m in Sources */,
+				0CD20C8D1374913B0075F7B2 /* SongHandler.m in Sources */,
+				0C5B5E1E13AC06A200EA5175 /* classification.c in Sources */,
+				0C5B5E3913AC07B500EA5175 /* audio.c in Sources */,
+				0C5B5E3A13AC07B500EA5175 /* deleting.c in Sources */,
+				0C5B5E3B13AC07B500EA5175 /* music_functions.c in Sources */,
+				0C5B5E3C13AC07B500EA5175 /* preprocessing.c in Sources */,
+				0C5B5E3D13AC07B500EA5175 /* run.c in Sources */,
+				0C5B5E3E13AC07B500EA5175 /* scanning.c in Sources */,
+				0C5B5E3F13AC07B500EA5175 /* segmentation.c in Sources */,
+				0C5B5E4713AC07FE00EA5175 /* allocate.c in Sources */,
+				0C5B5E4813AC07FE00EA5175 /* flex_array.c in Sources */,
+				0C5B5E4913AC07FE00EA5175 /* general_functions.c in Sources */,
+				0C5B5E4A13AC07FE00EA5175 /* global.c in Sources */,
+				0C5B5E4B13AC07FE00EA5175 /* image_functions.c in Sources */,
+				0C5B5E4C13AC07FE00EA5175 /* linked_list.c in Sources */,
+				0C5B5E5313AC0B4A00EA5175 /* platform_specific.m in Sources */,
+				0C5B5E5613AC0CA900EA5175 /* ImageHandler.m in Sources */,
+				0C9BABB613B9546A00C7209D /* audio_files.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Discotective_Prefix.pch;
+				INFOPLIST_FILE = "Discotective-Info.plist";
+				PRODUCT_NAME = Discotective;
+				PROVISIONING_PROFILE = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Discotective_Prefix.pch;
+				INFOPLIST_FILE = "Discotective-Info.plist";
+				PRODUCT_NAME = Discotective;
+				PROVISIONING_PROFILE = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alex Kuhn (XL38L464R6)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6A7724E0-A6F0-4C88-BD84-82B052DB1976";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Discotective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Discotective" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

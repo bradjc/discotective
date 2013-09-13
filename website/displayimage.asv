@@ -1,0 +1,23 @@
+
+img = [];
+
+%read in the same file
+%figure();
+fid = fopen('defishey.bin','rb');        %open file
+for i=1:1944
+    data = fread(fid, 2592, 'bit1');
+    img = [img; data'];
+end
+fclose(fid);
+
+img = double(img)*-1;
+
+%img = img/max(img(:));
+
+%colormap(gray);
+%imagesc(img);
+
+imwrite(img, 'binary.tiff', 'Compression', 'none');
+%imwrite(img, gray, 'grayscale.png', 'bitdepth', 8);
+imshow('binary.tiff');
+
